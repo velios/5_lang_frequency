@@ -19,6 +19,7 @@ $ python lang_frequency.py *.txt -c 6
  ('на', 1232),
  ('что', 1071)]
 
+
 Running on Windows in the same way
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
