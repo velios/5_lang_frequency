@@ -1,7 +1,19 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+The script count the most used words in the text
 
-# Project Goals
+# Running on linux
+$ python lang_frequency.py filename.txt -c 6
+?????? 6 ????? ????? ???????????? ???? ? ????? filename.txt
+
+[('?', 2101),
+ ('?', 1814),
+ ('?????', 1607),
+ ('??', 1378),
+ ('??', 1232),
+ ('???', 1071)]
+
+
+Running on Windows in the same way
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
