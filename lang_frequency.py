@@ -40,6 +40,11 @@ def configurate_cmd_parser():
     return arguments_from_cmd.parse_args()
 
 
+def output_frequency_result_to_console(most_frequent_words_list):
+    for index, word in enumerate(most_frequent_words_list):
+        print('{0:4}  {1:15} {2:6}'.format(index + 1, word[0], word[1]))
+
+
 if __name__ == '__main__':
     cmd_arguments = configurate_cmd_parser()
 
@@ -48,8 +53,6 @@ if __name__ == '__main__':
         most_frequent_words_list = get_most_frequent_words(
             make_words_list_from_string(
                 remove_punctuation_from_string(data_from_file)), number_of_results=cmd_arguments.count)
-        # Output section
         print('\nСписок {} самых часто используемых слов в файле {}\n'.format(cmd_arguments.count,
                                                                               os.path.basename(filepath)))
-        for index, word in enumerate(most_frequent_words_list):
-            print('{0:4}  {1:15} {2:6}'.format(index, word[0], word[1]))
+        output_frequency_result_to_console(most_frequent_words_list)
